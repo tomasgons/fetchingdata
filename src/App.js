@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import './App.css'
 import axios from 'axios';
-
+//
 function App() {
   const [data, setData] = useState({ hits: [] });
   const [query, setQuery] = useState('redux');

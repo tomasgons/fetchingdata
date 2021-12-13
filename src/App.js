@@ -31,11 +31,12 @@ function App() {
   }, [url]);
 
   return (
-    <Fragment className="searchContainer">
+    <Fragment >
+      <div className="searchContainer"></div>
       <h1>Search HackerNews</h1>
       <form
         onSubmit={(event) => {
-          setUrl(`http://hn.algolia.com/api/v1/search?query=${query}`)
+          setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)
           event.preventDefault()
         }
         }
@@ -48,7 +49,7 @@ function App() {
         <button
           type="button"
           onClick={() =>
-            setUrl(`http://hn.algolia.com/api/v1/search?query=${query}`)
+            setUrl(`https://hn.algolia.com/api/v1/search?query=${query}`)
           }
         >
           Search

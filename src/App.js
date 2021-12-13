@@ -4,7 +4,7 @@ import axios from 'axios';
 
 function App() {
   const [data, setData] = useState({ hits: [] });
-  const [query, setQuery] = useState('redux');
+  const [query, setQuery] = useState('');
   const [url, setUrl] = useState(
     'https://hn.algolia.com/api/v1/search?query=snowden',
   );
